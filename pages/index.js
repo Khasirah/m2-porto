@@ -1,5 +1,6 @@
 import Head from "next/head"
 import Image from "next/image"
+import Menu from "../components/Menu"
 
 function Home() {
 	return (
@@ -20,12 +21,12 @@ function Home() {
 						alt={"logo_djp"}
 					/>
 				</div>
-				<div className="flex flex-col items-center border">
+				<div className="flex flex-col items-center">
 					<h1 className="mt-4 font-bold text-lg">Selamat Datang</h1>
 					<h3>di Layanan Online</h3>
 					<h3>KPP Pratama Jakarta Menteng Dua</h3>
 				</div>
-				<div>menu</div>
+				<Menu />
 			</div>
 			<div className=""></div>
 		</div>

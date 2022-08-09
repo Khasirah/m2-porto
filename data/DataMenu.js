@@ -42,6 +42,18 @@ const dataMenu = [
 	{
 		id: 9,
 		nama: "Tutorial Pajak",
-		link: "/",
+		link: "/tutorial-pajak",
 	},
+	{
+		id: 10,
+		nama: "Layanan Pengaduan",
+		link: "https://pengaduan.pajak.go.id/"
+	},
+	{
+		id: 11,
+		nama: "Tentang",
+		link: "/tentang"
+	}
 ]
+
+export default dataMenu
