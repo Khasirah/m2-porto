@@ -1,18 +1,16 @@
-import Head from "next/head"
 import Image from "next/image"
+import HeadLayout from "../components/HeadLayout"
 import Menu from "../components/Menu"
 
 function Home() {
 	return (
 		<div className="max-w-[390px]">
-			<Head>
-				<title>KPP Pratama Jakarta Menteng Dua</title>
-				<link rel="shortcut icon" href="/djp_no_text.ico" />
-			</Head>
+			<HeadLayout />
 			<div className="flex justify-center items-center h-12 backdrop-blur-xl fixed top-0 w-full z-50 max-w-[390px]">
-				<h1 className="font-semibold tracking-wider text-base ">Layanan 071</h1>
+				<h1 className="text-base font-semibold tracking-wider ">Layanan 071</h1>
+				<div className="h-8 w-8 rounded-lg bg-slate-200 absolute right-3 cursor-pointer"></div>
 			</div>
-			<div className="mt-12 min-h-fit flex flex-col items-center w-full">
+			<div className="flex flex-col items-center w-full mt-12 min-h-fit">
 				<div className="mt-5">
 					<Image
 						src={"/static/djp_no_text.png"}
@@ -22,7 +20,7 @@ function Home() {
 					/>
 				</div>
 				<div className="flex flex-col items-center">
-					<h1 className="mt-4 font-bold text-lg">Selamat Datang</h1>
+					<h1 className="mt-4 text-lg font-bold">Selamat Datang</h1>
 					<h3>di Layanan Online</h3>
 					<h3>KPP Pratama Jakarta Menteng Dua</h3>
 				</div>
